@@ -1,6 +1,4 @@
-Here’s an improved version of your `README.md` with more detailed information and commands for building and running the .NET Core backend and ReactJS frontend apps, as well as a TO DO list for future improvements.
 
-````markdown
 # .NET Core & ReactJS Boilerplate
 
 This is a boilerplate project for a web application with a **.NET Core backend** and a **ReactJS frontend**. The backend provides API endpoints, while the frontend consumes these endpoints to display and interact with data. This setup is designed to speed up initial development with ready-to-use configurations for database, frontend, and backend services.
@@ -28,7 +26,6 @@ This is a boilerplate project for a web application with a **.NET Core backend**
 git clone https://github.com/your-repo/net-core-reactjs-boilerplate.git
 cd net-core-reactjs-boilerplate
 ```
-````
 
 ### Backend Setup (.NET Core)
 
