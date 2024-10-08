@@ -45,12 +45,16 @@ cd net-core-reactjs-boilerplate
 
     ```bash
     dotnet ef database update
+    OR
+    dotnet build
     ```
 
 4. Run the backend API server:
 
     ```bash
     dotnet watch run
+    OR
+    dotnet watch --no-hot-reload
     ```
 
 5. To drop the database (for development reset):
@@ -62,7 +66,7 @@ cd net-core-reactjs-boilerplate
 6. To add a new migration (after updating models):
 
     ```bash
-    dotnet ef migrations add <MigrationName>
+    dotnet ef migrations add MigrationName -p Persistence -s API
     ```
 
 7. To update the database after a migration:
@@ -75,7 +79,7 @@ cd net-core-reactjs-boilerplate
 1. Navigate to the frontend project directory:
 
     ```bash
-    cd Frontend/
+    cd reactjs-client-app/
     ```
 
 2. Install npm dependencies:
@@ -102,19 +106,13 @@ cd net-core-reactjs-boilerplate
     - Backend: `dotnet watch run`
     - Frontend: `npm start`
 
-    By default, the frontend will run on `http://localhost:3000` and the backend will run on `https://localhost:5001`.
+    By default, the frontend will run on `https://localhost:3000` and the backend will run on `http://localhost:5000`.
 
 ## TO DO List
 
 -   [ ] Remove MobX and implement **Redux** for state management in the React app.
 -   [ ] Remove **Semantic UI** and migrate to **Material UI** for styling.
 -   [ ] Clean up the codebase for better readability and maintainability.
-
-## Additional Information
-
--   The backend uses **Entity Framework Core** for database management, with migrations enabled to handle schema updates.
--   The React app is set up with **MobX** for state management, but a switch to **Redux** is planned for better scalability and community support.
--   The app currently uses **Semantic UI**, but will soon transition to **Material UI** for more modern and customizable components.
 
 ## Useful Commands
 
